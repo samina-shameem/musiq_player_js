@@ -8,6 +8,11 @@
     width: 100%;
     height: 100vh;
     background:#333;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .music-player{
@@ -16,4 +21,10 @@
     width: 400px;
     padding: 25px 35px;
     text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }

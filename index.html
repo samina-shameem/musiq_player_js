@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player Design</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>-->
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <i class="fas fa-angle-left">
-                </div>
-                <div class="circle">
-                    <i class="fas fa-bars"></i>
-
-                    
-                </div>
-            </nav>
+    <div class="music-player">
+        <h1>Music Player</h1>
+        <div class="player-controls">
+            <img id="cover" src="" alt="Album Cover" class="album-cover">
+            <div class="song-info">
+                <h2 id="title">Song Title</h2>
+                <h3 id="artist">Artist</h3>
+            </div>
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶️</button>
+            <button id="pause" style="display: none;">⏸</button>
+            <button id="next">⏭</button>
+        </div>
+        </div>
+        <div class="progress-container">
+            <input type="range" id="progress" value="0" max="100">
         </div>
     </div>
 
-    
-
+    <script src="script.js"></script>
 </body>
 
 </html>
